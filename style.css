@@ -242,7 +242,7 @@ span{
 }
 
 .services .section-title {
-    padding-top: 50px;
+    padding-top: 35px;
     font-size: 3.5rem;
     margin-bottom: 3rem;
     color: #f7d186;
@@ -262,7 +262,7 @@ span{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 30%;
     transition: 0.3s ease;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .service-box:hover {
