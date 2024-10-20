@@ -292,20 +292,21 @@ span{
 }
 
 .services .btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background-color: black;
-    border-radius: 4rem;
-    font-size: 1.6rem;
+    display: block;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    background-color: #121212; 
     color: #f7d186;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid #f7d186;
-    transition: 0.3s ease;
-    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-
+.services .btn:hover {
+    background-color: #e0c67a;
+    color: #121212;
+}
 
 .skills {
     text-align: center;
