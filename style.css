@@ -290,22 +290,20 @@ span{
     color: #f7d186;
 }
 
-.services .btn {
-    margin-top: 40px;
-    display: block;
-    margin: 1rem auto;
+.buttonx {
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #121212; 
-    color: #f7d186;
+    background-color: #f7d186;
+    color: #fff;
     text-align: center;
-    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.services .btn:hover {
-    background-color: #f7d186;
-    color: #121212;
+.buttonx:hover {
+    background-color: #e6c070;
 }
 
 .skills {
