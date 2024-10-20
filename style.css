@@ -290,7 +290,7 @@ span{
     color: #f7d186;
 }
 
-.buttonx {
+.services .buttonx {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -302,7 +302,7 @@ span{
     transition: background-color 0.3s ease;
 }
 
-.buttonx:hover {
+.services .buttonx:hover {
     background-color: #e6c070;
 }
 
