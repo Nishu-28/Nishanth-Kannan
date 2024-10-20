@@ -262,7 +262,7 @@ span{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 30%;
     transition: 0.3s ease;
-    padding-bottom: 25px;
+    padding-bottom: 5rem;
 }
 
 .service-box:hover {
@@ -304,7 +304,7 @@ span{
 }
 
 .services .btn:hover {
-    background-color: #e0c67a;
+    background-color: #f7d186;
     color: #121212;
 }
 
