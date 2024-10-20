@@ -290,6 +290,22 @@ span{
     color: #f7d186;
 }
 
+.services .btn {
+    display: block;
+    margin: 1rem auto;
+    padding: 10px 20px;
+    background-color: #f7d186; 
+    color: #121212;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.services .btn:hover {
+    background-color: #e0c67a;
+}
+
 .skills {
     text-align: center;
     padding: 20px;
@@ -322,7 +338,7 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} 
 
 .progress-bar {
     width: 100%;
