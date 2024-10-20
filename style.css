@@ -262,7 +262,6 @@ span{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 30%;
     transition: 0.3s ease;
-    padding-bottom: 8rem;
 }
 
 .service-box:hover {
@@ -292,6 +291,7 @@ span{
 }
 
 .services .btn {
+    padding-top: 20px;
     display: block;
     margin: 1rem auto;
     padding: 10px 20px;
