@@ -287,23 +287,26 @@ span{
 
 .service-box a {
     font-size: medium;
-    color: #f7d186;
+    color: ;
 }
 
 .services .buttonx {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #f7d186;
-    color: #fff;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background-color: black;
+    color: #f7d186;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 .services .buttonx:hover {
-    background-color: #e6c070;
+    background-color: #f7d186;
+    color: black;
+    cursor: pointer;
 }
 
 .skills {
