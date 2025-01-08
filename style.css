@@ -848,3 +848,107 @@ footer {
 footer {
     padding: 1rem;
 }
+
+/* Additions for Extra Responsiveness */
+
+/* Small Phones (Max Width 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .home .home-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    .home-img img {
+        width: 90%;
+        height: auto;
+    }
+
+    .service-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Tablets (Max Width 768px) */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .services .service-box {
+        width: 90%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Medium Screens (Max Width 1024px) */
+@media (max-width: 1024px) {
+    .home {
+        gap: 3rem;
+    }
+
+    .home-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .project-card {
+        width: 48%;
+    }
+}
+
