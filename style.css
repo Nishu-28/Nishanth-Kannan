@@ -71,7 +71,8 @@ html {
 
 section {
     padding: 50px 20px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .home{
@@ -110,7 +111,9 @@ span{
 .home-img img{
     padding-top:50px;
     position: relative;
-    height: 40vw;
+    width: 90vw;
+    max-width: 300px;
+    height: auto;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 35%;
@@ -287,7 +290,7 @@ span{
 
 .service-box a {
     font-size: medium;
-    color: ;
+    color: blue;
 }
 
 .services .buttonx {
@@ -798,14 +801,13 @@ footer {
 
     .about-container {
         flex-direction: column;
-    }
-
-    .about-image {
-        padding: 0;
-    }
-
-    .about-content {
         padding: 20px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+        padding: 0;
     }
 }
 
