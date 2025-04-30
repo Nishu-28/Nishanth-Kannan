@@ -7,6 +7,25 @@ function removeActiveClasses() {
     navLinks.forEach(link => link.classList.remove('active'));
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    }
+
+    // Optional: close menu when a link is clicked (mobile UX)
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show');
+        });
+    });
+});
+
+
 // Function to add active class to the current section's link
 function addActiveClassToLink(id) {
     const activeLink = document.querySelector(`nav a[href="#${id}"]`);
