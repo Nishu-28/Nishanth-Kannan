@@ -25,6 +25,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 
 // Function to add active class to the current section's link
 function addActiveClassToLink(id) {

@@ -23,7 +23,6 @@ body {
 }
 
 header {
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,15 +36,27 @@ header {
     z-index: 100;
 }
 
-.logo {
-    font-size: 3rem;
-    color: #f7d186;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.5s ease;
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.4);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    /* glass blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* for Safari */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-.logo:hover {
+
+.logo img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.logo img:hover {
     transform: scale(1.1);
 }
 
@@ -599,6 +610,9 @@ button:hover {
     border-radius: 5px;
 }
 
+.about-title-mobile {
+    display: none;
+}
 
 @media (max-width: 768px) {
     .about-content p {
@@ -846,8 +860,20 @@ footer {
         font-size: 1.6rem;
     }
 
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content .resume-projects {
+        align-items: center;
+        justify-content: center;
+    }
+
     .home-content h2 {
-        font-size: 3rem;
+        font-size: 2.4rem;
+        white-space: nowrap;
     }
 
     .home-content h3 {
@@ -864,14 +890,44 @@ footer {
     }
 
     .about-container {
+        display: flex;
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
     }
 
-    .about-image,
-    .about-content {
+    .about-title-mobile {
+        display: block;
+        font-size: 4rem;
+        color: #f7d186;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .about-title-desktop {
+        display: none;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        padding: 0;
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .about-image img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .about-content {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .about-content p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
     }
 }
 
